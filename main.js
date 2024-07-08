@@ -3,8 +3,9 @@ let currentData;
 let materialData = [];
 
 function readCSV() {
-  var fileInput = document.getElementById('csvFile');
-  var file = fileInput.files[0];
+//  var fileInput = document.getElementById('csvFile');
+//  var file = fileInput.files[0];
+  file = 725_updated.csv;
   Papa.parse(file, {
     header: true,
     complete: function(results) {
